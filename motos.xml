@@ -1,0 +1,83 @@
+<?xml version = '1.0'?>
+<ROWSET>
+   <ROW num="1">
+      <IMMATRICULATION>777 ADA 95</IMMATRICULATION>
+      <NUMSERIE>1007</NUMSERIE>
+      <MODELE>EBR 1190 RX</MODELE>
+      <MARQUE>EBR</MARQUE>
+      <CYLINDREE>1191</CYLINDREE>
+      <PRIXCAT>16998</PRIXCAT>
+      <TYPE>sportif</TYPE>
+      <ACCESSOIRE>
+         <ACCESSOIRE_ITEM>
+            <NOM>amortisseur de direction</NOM>
+            <MARQUE>EBR</MARQUE>
+         </ACCESSOIRE_ITEM>
+      </ACCESSOIRE>
+   </ROW>
+   <ROW num="2">
+      <IMMATRICULATION>123 JDK 14</IMMATRICULATION>
+      <NUMSERIE>1008</NUMSERIE>
+      <MODELE>899 PANIGALE</MODELE>
+      <MARQUE>DUCATI</MARQUE>
+      <CYLINDREE>898</CYLINDREE>
+      <PRIXCAT>15890</PRIXCAT>
+      <TYPE>sportif</TYPE>
+      <ACCESSOIRE>
+         <ACCESSOIRE_ITEM>
+            <NOM>bulle</NOM>
+            <MARQUE>MRA Racing</MARQUE>
+            <PRIX>99</PRIX>
+         </ACCESSOIRE_ITEM>
+         <ACCESSOIRE_ITEM>
+            <NOM>protège réservoir</NOM>
+            <MARQUE>DUCATI Corse</MARQUE>
+            <PRIX>26.1</PRIX>
+         </ACCESSOIRE_ITEM>
+         <ACCESSOIRE_ITEM>
+            <NOM>support de plaque</NOM>
+            <MARQUE>EVOTECH DUCATI PANIGALE</MARQUE>
+            <PRIX>255</PRIX>
+         </ACCESSOIRE_ITEM>
+      </ACCESSOIRE>
+   </ROW>
+   <ROW num="3">
+      <IMMATRICULATION>145 UML 59</IMMATRICULATION>
+      <NUMSERIE>1009</NUMSERIE>
+      <MODELE>Electra Glide Ultra Classic</MODELE>
+      <MARQUE>HARLEY DAVIDSON</MARQUE>
+      <CYLINDREE>1449</CYLINDREE>
+      <PRIXCAT>26195</PRIXCAT>
+      <TYPE>custom</TYPE>
+      <POURCENTAGECR>15.5</POURCENTAGECR>
+      <ACCESSOIRE>
+         <ACCESSOIRE_ITEM>
+            <NOM>valises</NOM>
+            <MARQUE>HARLEY DAVIDSON</MARQUE>
+         </ACCESSOIRE_ITEM>
+         <ACCESSOIRE_ITEM>
+            <NOM>topcase</NOM>
+            <MARQUE>HARLEY DAVIDSON</MARQUE>
+         </ACCESSOIRE_ITEM>
+         <ACCESSOIRE_ITEM>
+            <NOM>poignées chromées</NOM>
+            <PRIX>900</PRIX>
+         </ACCESSOIRE_ITEM>
+         <ACCESSOIRE_ITEM>
+            <NOM>repose-pieds passager à LED</NOM>
+            <PRIX>856.55</PRIX>
+         </ACCESSOIRE_ITEM>
+      </ACCESSOIRE>
+   </ROW>
+   <ROW num="4">
+      <IMMATRICULATION>689 PHP 59</IMMATRICULATION>
+      <NUMSERIE>1010</NUMSERIE>
+      <MODELE>VT Shadow 125</MODELE>
+      <MARQUE>HONDA</MARQUE>
+      <CYLINDREE>124</CYLINDREE>
+      <PRIXCAT>7000</PRIXCAT>
+      <TYPE>custom</TYPE>
+      <POURCENTAGECR>0</POURCENTAGECR>
+      <ACCESSOIRE/>
+   </ROW>
+</ROWSET>
