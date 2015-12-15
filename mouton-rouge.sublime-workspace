@@ -1,0 +1,411 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"po",
+				"post-heading"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"alb",
+				"nom_album"
+			],
+			[
+				"TT1_per",
+				"TT1_personnage_ntab_type"
+			],
+			[
+				"abscisse",
+				"abscisse"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"Ob",
+				"Obj_Zone_Type"
+			],
+			[
+				"Rhône",
+				"Rhône-Alpes"
+			],
+			[
+				"Nord",
+				"Nord"
+			],
+			[
+				"Oj",
+				"Obj_Zone_Type"
+			],
+			[
+				"Obj",
+				"Obj_Zone"
+			],
+			[
+				"TT1_personnage",
+				"TT1_personnage_type"
+			],
+			[
+				"TT",
+				"TT1_personnage_album_type"
+			],
+			[
+				"TT1_personn",
+				"TT1_personnage_album"
+			],
+			[
+				"TT1",
+				"TT1_album_personnage"
+			],
+			[
+				"id_album",
+				"id_album"
+			],
+			[
+				"REGION",
+				"REGION"
+			],
+			[
+				"idZon",
+				"idZone_seq"
+			],
+			[
+				"ncomm",
+				"ncomm"
+			],
+			[
+				"ex",
+				"executeQuery"
+			],
+			[
+				"NUM",
+				"NUM_COMPTE"
+			],
+			[
+				"montant",
+				"MONTANT"
+			],
+			[
+				"Exe",
+				"Exception"
+			],
+			[
+				"exe",
+				"executeUpdate"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: add	",
+				"Package Control: Add Repository"
+			],
+			[
+				"ssjs",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ssht",
+				"Set Syntax: HTML (Tcl)"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/james/Bureau/gitproxy.sh",
+		"/home/james/Bureau/unsetgitproxy.sh",
+		"/home/james/SEO/www/apple-touch-icon-144x144.png",
+		"/home/james/SEO/www/comparaison-google-bing-nofollow.html",
+		"/var/www/html/ebm/js-playground/test.html",
+		"/var/www/html/ebm/js-playground/style.css",
+		"/var/www/html/ebm/js-playground/rpg.js",
+		"/var/www/html/ebm/js-playground/README.md",
+		"/var/www/html/ebm/js-playground/index.html",
+		"/var/www/html/ebm/js-playground/main.js",
+		"/home/james/SEO/www/about.html",
+		"/home/james/SEO/www/comportement-des-robots-indexeurs.html",
+		"/home/james/SEO/www/contact.html",
+		"/home/james/SEO/www/downloads.html",
+		"/home/james/SEO/www/favorisation-recherche-mobile.html",
+		"/home/james/SEO/www/index.html",
+		"/home/james/SEO/www/post.html",
+		"/home/james/SEO/www/postintro.html",
+		"/home/james/SEO/www/sandbox.html",
+		"/home/james/GitHub/js-playground/index.html",
+		"/etc/apache2/sites-available/js-playground.conf",
+		"/var/www/html/ebm/javascriptrpg/main.php",
+		"/home/james/GitHub/js-playground/README.md",
+		"/home/james/GitHub/js-playground/main.js",
+		"/home/james/GitHub/js-playground/main.hs",
+		"/home/james/WebstormProjects/RPG/main.js",
+		"/home/james/GitHub/tp2tintin/Lance_les_scripts_2eme_partie.sql",
+		"/home/james/GitHub/tp2tintin/TT2_views.sql",
+		"/home/james/GitHub/tp2tintin/insert_albums_noms_etrangers.sql",
+		"/home/james/GitHub/tp2tintin/insert_personnages_noms_etrangers.sql",
+		"/home/james/GitHub/tp2tintin/yessine/create_procedure_Set_Nom_Etranger_Personnage.sql",
+		"/home/james/GitHub/tp2tintin/yessine/create_procedure_Set_Titre_Etranger.sql",
+		"/home/james/GitHub/tp2tintin/yessine/crebas_noms_etrangers.sql",
+		"/home/james/GitHub/tp2tintin/create_procedure_Set_Titre_Etranger.sql",
+		"/home/james/GitHub/tp2tintin/yessine/set_all_noms_etrangers.sql",
+		"/home/james/GitHub/tp2tintin/set_all_titres_etrangers.sql",
+		"/home/james/GitHub/tp2tintin/set_all_noms_etrangers.sql",
+		"/home/james/GitHub/tp2tintin/insert_personnages.sql",
+		"/home/james/GitHub/tp2tintin/insert_languages.sql",
+		"/home/james/GitHub/tp2tintin/insert_albums.sql",
+		"/home/james/GitHub/tp2tintin/create_procedure_Set_Nom_Etranger_Personnage.sql",
+		"/home/james/GitHub/tp2tintin/create_procedure_Ajoute_Personnage_Dans_Album.sql",
+		"/home/james/GitHub/tp2tintin/ajoute_personnage_dans_album.sql",
+		"/home/james/GitHub/tp2tintin/Lance_les_scripts_1ere_partie.sql",
+		"/home/james/GitHub/js-playground/style.css",
+		"/home/james/GitHub/tp2tintin/README.md",
+		"/usr/share/applications/sublime-text.desktop",
+		"/home/james/GitHub/javascript/packages/eslint-config-airbnb/legacy.js",
+		"/home/james/GitHub/javascript/packages/eslint-config-airbnb/base.js",
+		"/home/james/GitHub/javascript/packages/eslint-config-airbnb/index.js",
+		"/home/james/GitHub/javascript/packages/eslint-config-airbnb/README.md",
+		"/home/james/GitHub/Spoon-Knife/styles.css",
+		"/home/james/GitHub/Spoon-Knife/README.md",
+		"/home/james/GitHub/Spoon-Knife/index.html",
+		"/var/www/html/ebm/jameshyot/index.php",
+		"/etc/apt/apt.conf",
+		"/var/www/html/ebm/jameshyot/shape.php",
+		"/home/james/.steam/registry.vdf",
+		"/var/www/html/ebm/jameshyot/main.js",
+		"/home/james/EBM/PLSQL/Objet_Relationnel/partie2/TT2_albums_suivants.sql",
+		"/home/james/EBM/PLSQL/Objet_Relationnel/partie2/set_all_titres_etrangers.sql",
+		"/home/james/EBM/PLSQL/Objet_Relationnel/partie2/set_all_noms_etrangers.sql",
+		"/home/james/EBM/PLSQL/Objet_Relationnel/partie2/Lance_les_scripts_2eme_partie.sql",
+		"/home/james/EBM/PLSQL/Objet_Relationnel/partie2/Lance_les_scripts_1ere_partie.sql",
+		"/home/james/EBM/PLSQL/Objet_Relationnel/partie2/insert_personnages.sql",
+		"/home/james/EBM/PLSQL/Objet_Relationnel/partie2/insert_languages.sql",
+		"/home/james/EBM/PLSQL/Objet_Relationnel/partie2/insert_albums.sql",
+		"/home/james/EBM/PLSQL/Objet_Relationnel/partie2/create_procedure_Set_Titre_Etranger.sql",
+		"/home/james/EBM/PLSQL/Objet_Relationnel/partie2/ajoute_personnage_dans_album.sql",
+		"/home/james/EBM/PLSQL/Objet_Relationnel/partie2/TT2_create_table.sql",
+		"/home/james/EBM/PLSQL/Objet_Relationnel/partie2/TT2_views.sql",
+		"/home/james/EBM/PLSQL/Objet_Relationnel/partie2/TT2_query.sql",
+		"/home/james/EBM/PLSQL/Objet_Relationnel/partie2/create_procedure_Set_Nom_Etranger_Personnage.sql",
+		"/home/james/EBM/PLSQL/Objet_Relationnel/partie2/create_procedure_Ajoute_Personnage_Dans_Album.sql",
+		"/home/james/EBM/PLSQL/Objet-Relationnel/partie2/create_procedure_Set_Titre_Etranger.sql",
+		"/home/james/EBM/PLSQL/Objet-Relationnel/partie2/create_procedure_Set_Nom_Etranger_Personnage.sql",
+		"/home/james/EBM/PLSQL/TP2/TP2_HYOT_Proc_Trigger.sql",
+		"/home/james/EBM/PLSQL/TP2/TPGeo_HYOT.sql",
+		"/etc/environment",
+		"/home/james/EBM/PLSQL/Objet-Relationnel/geographie/HYOT_Geographie_Objet.sql",
+		"/home/james/EBM/PLSQL/Objet-Relationnel/partie2/TT2_create_table.sql",
+		"/home/james/EBM/PLSQL/Objet-Relationnel/partie2/create_procedure_Ajoute_Personnage_Dans_Album.sql",
+		"/home/james/EBM/PLSQL/Objet_Relationnel/XML/xdk_linux_10_1_0_2_0_production/bin/env.csh",
+		"/etc/apt.conf",
+		"/etc/apt-conf",
+		"/home/james/EBM/PLSQL/TP2/TP2_HYOT_Creation_tables.sql",
+		"/home/james/sitemap.xml",
+		"/home/james/SEO/www/robots.txt",
+		"/home/james/EBM/PLSQL/Objet-Relationnel/partie2/TT2_query.sql",
+		"/home/james/SEO/www/postclem.html",
+		"/home/james/EBM/PLSQL/Objet-Relationnel/partie2/TT2_views.sql",
+		"/home/james/EBM/PLSQL/Objet-Relationnel/partie2/TT2_albums_suivants.sql",
+		"/var/www/html/ebm/jameshyot/sandbox.html",
+		"/var/www/html/ebm/jameshyot/postjames.html",
+		"/var/www/html/ebm/jameshyot/post.html",
+		"/var/www/html/ebm/jameshyot/postgreg.html",
+		"/var/www/html/ebm/jameshyot/postclem.html",
+		"/home/james/EBM/PLSQL/Objet-Relationnel/partie2/set_all_titres_etrangers.sql",
+		"/home/james/EBM/PLSQL/Objet-Relationnel/partie2/set_all_noms_etrangers.sql",
+		"/home/james/EBM/PLSQL/Objet-Relationnel/partie2/Lance_les_scripts_2eme_partie.sql",
+		"/home/james/EBM/PLSQL/Objet-Relationnel/partie2/Lance_les_scripts_1ere_partie.sql",
+		"/home/james/EBM/PLSQL/Objet-Relationnel/partie2/insert_personnages.sql",
+		"/home/james/EBM/PLSQL/Objet-Relationnel/partie2/insert_languages.sql",
+		"/home/james/EBM/PLSQL/Objet-Relationnel/partie2/insert_albums.sql",
+		"/home/james/EBM/PLSQL/Objet-Relationnel/partie2/ajoute_personnage_dans_album.sql",
+		"/var/www/html/ebm/jameshyot/postintro.html",
+		"/var/www/html/ebm/jameshyot/index.html",
+		"/var/www/html/ebm/jameshyot/contact.html",
+		"/var/www/html/ebm/jameshyot/about.html",
+		"/home/james/EBM/PLSQL/Objet-Relationnel/partie1/create_procedure_Ajoute_Personnage_Dans_Album.sql",
+		"/home/james/EBM/PLSQL/Objet-Relationnel/partie1/TT1_query.sql",
+		"/home/james/EBM/PLSQL/Objet-Relationnel/partie1/TT1_albums_suivants.sql",
+		"/home/james/EBM/PLSQL/Objet-Relationnel/TP1.sql",
+		"/home/james/EBM/PLSQL/Objet-Relationnel/partie1/TT1_create_table.sql",
+		"/home/james/EBM/PLSQL/TP1/TP_BANQUE_KHLAYFIA_HYOT.sql",
+		"/home/james/EBM/PLSQL/TP2/TP2_HYOT.sql",
+		"/home/james/EBM/PLSQL/Objet-Relationnel/partie1/TT1_querysql",
+		"/home/james/node-v5.0.0-linux-arm64/lib/node_modules/npm/configure",
+		"/home/james/Téléchargements/libexecinfo-1.1/Makefile",
+		"/home/james/Téléchargements/libexecinfo-1.1/README",
+		"/home/james/NetBeansProjects/TPJBDC/src/tpjbdc/TPJBDC.java",
+		"/home/james/NetBeansProjects/TPJBDC/src/tpjbdc/Service.java",
+		"/usr/bin/netbeans",
+		"/home/james/distributions-master/deb/README.md",
+		"/usr/bin/nodejs",
+		"/usr/bin/node",
+		"/home/james/node-v5.0.0-linux-arm64/bin/npm",
+		"/home/james/EBM/Java/Service/src/service/Service.java"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"intro-header",
+			"intro-header	",
+			"intro-header",
+			"intro-header-fa",
+			"intro-hea",
+			".jpg",
+			" ",
+			"document.write",
+			"console.log",
+			"TT2_personnage",
+			"TT2_Album",
+			"l1",
+			")",
+			");",
+			"VALUES(",
+			"idZone",
+			"	\n",
+			"Statement",
+			")\n",
+			"*/",
+			"SELECT",
+			" (",
+			"cleprim"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"console.log",
+			"document.write",
+			"TT1_personnage",
+			"TT1_album",
+			"foo",
+			",NULL)",
+			"VALUES(NEW Obj_Pays_Type(",
+			"zone"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 301.0,
+	"status_bar_visible": true
+}
