@@ -14,6 +14,7 @@
             <MARQUE>EBR</MARQUE>
          </ACCESSOIRE_ITEM>
       </ACCESSOIRE>
+      <TRANSMISSION>transmission finale par chaîne</TRANSMISSION>
    </ROW>
    <ROW num="2">
       <IMMATRICULATION>123 JDK 14</IMMATRICULATION>
@@ -40,6 +41,7 @@
             <PRIX>255</PRIX>
          </ACCESSOIRE_ITEM>
       </ACCESSOIRE>
+      <TRANSMISSION>transmission finale par chaîne</TRANSMISSION>
    </ROW>
    <ROW num="3">
       <IMMATRICULATION>145 UML 59</IMMATRICULATION>
@@ -68,6 +70,7 @@
             <PRIX>856.55</PRIX>
          </ACCESSOIRE_ITEM>
       </ACCESSOIRE>
+      <TRANSMISSION>transmission finale par courroie crantée</TRANSMISSION>
    </ROW>
    <ROW num="4">
       <IMMATRICULATION>689 PHP 59</IMMATRICULATION>
@@ -79,5 +82,6 @@
       <TYPE>custom</TYPE>
       <POURCENTAGECR>0</POURCENTAGECR>
       <ACCESSOIRE/>
+      <TRANSMISSION>transmission finale par chaîne</TRANSMISSION>
    </ROW>
 </ROWSET>

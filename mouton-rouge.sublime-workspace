@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"nu",
+				"numSerie"
+			],
+			[
 				"Num",
 				"numSerie"
 			],
@@ -116,42 +120,13 @@
 	"buffers":
 	[
 		{
+			"contents": "DROP TABLE moto\n/\nDROP TYPE moto_type\n/\nDROP TYPE accessoire_ntab_type\n/\nDROP TYPE accessoire_type\n/\n\n--On crée un type pour les accessoires possédant 3 attributs \nCREATE TYPE accessoire_type AS OBJECT (\n  nom VARCHAR2(40),\n  marque VARCHAR2(40),\n  prix FLOAT\n)\n/\n\n--Création de la table imbriquée d'accessoires\nCREATE OR REPLACE TYPE accessoire_ntab_type AS TABLE OF accessoire_type\n/\n\n--Création d'un type pour les motos dont avec tous les attributs (y compris les accessoires)\n--On ajoute également la méthode get_transmission qui pourra être appelée pour calculer la\n--transmission d'une moto\nCREATE TYPE moto_type AS OBJECT(\nimmatriculation VARCHAR2(20),\nnumSerie INTEGER,\nmodele VARCHAR2(40),\nmarque VARCHAR2(40),\ncylindree INTEGER,\nprixCat FLOAT,\ntype VARCHAR2(20),\npourcentageCr FLOAT,\naccessoire accessoire_ntab_type,\nMEMBER FUNCTION get_transmission RETURN VARCHAR2\n);\n/\n\n--On crée une méthode qui renvoie un VARCHAR2 en faisant de simple tests grâce à un IF\nCREATE OR REPLACE TYPE BODY moto_type AS\nMEMBER FUNCTION get_transmission RETURN VARCHAR2 IS\n	resultat VARCHAR2(45);\nBEGIN\n	IF UPPER(self.type) = 'SPORTIF' THEN\n		resultat := 'transmission finale par chaîne';\n	ELSIF UPPER(self.type) = 'CUSTOM' and self.cylindree <= 250 THEN\n		resultat := 'transmission finale par chaîne';\n	ELSIF UPPER(self.type) = 'CUSTOM' and self.cylindree > 250 THEN\n		resultat := 'transmission finale par courroie crantée';\n	ELSE\n		resultat := 'unknown';\n	END IF;\nreturn resultat;\nEND;\nEND;\n/\n\n--Enfin création de la table Moto, avec le numéro de série comme clé primaire,\n--et les accessoires comme table imbriquée\nCREATE TABLE moto OF moto_type\n(\n	CONSTRAINT pk_num_serie PRIMARY KEY(numSerie)\n) NESTED TABLE accessoire STORE AS tab_access\n/\n\n\nCREATE OR REPLACE PROCEDURE set_accessoire (p_nSerie VARCHAR2, p_nom VARCHAR2, p_marque VARCHAR2 , p_prix FLOAT)\n IS\nBEGIN\nINSERT INTO TABLE (SELECT m.accessoire FROM moto m WHERE m.numSerie = p_nSerie)\n  VALUES (p_nom,p_marque,p_prix);\n  COMMIT;  \nEND ;\n/\n\n\nINSERT INTO moto VALUES('777 ADA 95',1007,'EBR 1190 RX','EBR',1191,16998,'sportif',NULL, \n						NEW accessoire_ntab_type());\nINSERT INTO moto VALUES('123 JDK 14',1008,'899 PANIGALE','DUCATI',898,15890,'sportif',NULL, \n						NEW accessoire_ntab_type());\nINSERT INTO moto VALUES('145 UML 59',1009,'Electra Glide Ultra Classic','HARLEY DAVIDSON',1449,26195,'custom',15.5, \n						NEW accessoire_ntab_type());\nINSERT INTO moto VALUES('689 PHP 59',1010,'VT Shadow 125','HONDA',124,7000,'custom',0, \n						NEW accessoire_ntab_type());\n\n\nBegin\nset_accessoire('1007','amortisseur de direction','EBR', NULL);\nset_accessoire('1009', 'valises', 'HARLEY DAVIDSON', NULL);\nset_accessoire('1009', 'topcase', 'HARLEY DAVIDSON', NULL);\nset_accessoire('1009', 'poignées chromées', NULL, 900);\nset_accessoire('1009', 'repose-pieds passager à LED', NULL, 856.55);\nset_accessoire('1008', 'bulle', 'MRA Racing', 99);\nset_accessoire('1008', 'protège réservoir', 'DUCATI Corse', 26.10);\nset_accessoire('1008', 'support de plaque', 'EVOTECH DUCATI PANIGALE', 255);\ncommit;\nend;\n/\n\n\nSELECT m.*, m.get_transmission() as TRANSMISSION\nFROM moto m;\n\n\n\njava OracleXML getXML -user \"ebm14/SQL4ever\" -conn \"jdbc:oracle:thin:@oracle-edu.ec-lille.fr:1521:ecli4\" \"SELECT matricule, num_serie,marque, modele, cylindre ,transmission(num_serie) AS Transmission,accessoires FROM TF_MOTO ;\"",
 			"file": "TP_HYOT.sql",
+			"file_size": 3140,
+			"file_write_time": 1450192265000000,
 			"settings":
 			{
-				"buffer_size": 2602,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/james/EBM/PLSQL/Objet_Relationnel/geographie/HYOT_Geographie_Objet.sql",
-			"settings":
-			{
-				"buffer_size": 2933,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/james/GitHub/tp2tintin/crebas_noms_etrangers.sql",
-			"settings":
-			{
-				"buffer_size": 1798,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/james/GitHub/tp2tintin/insert_albums_noms_etrangers.sql",
-			"settings":
-			{
-				"buffer_size": 2430,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "README.md",
-			"settings":
-			{
-				"buffer_size": 84,
+				"buffer_size": 3345,
 				"line_ending": "Unix"
 			}
 		}
@@ -204,7 +179,14 @@
 	},
 	"file_history":
 	[
+		"/home/james/Documents/sam.xml",
+		"/home/james/GitHub/mouton-rouge/HYOT_moto.xml",
+		"/home/james/GitHub/mouton-rouge/motos.xml",
+		"/home/james/Documents/clem.xml",
+		"/home/james/GitHub/mouton-rouge/README.md",
+		"/home/james/GitHub/tp2tintin/insert_albums_noms_etrangers.sql",
 		"/home/james/GitHub/tp2tintin/crebas_noms_etrangers.sql",
+		"/home/james/EBM/PLSQL/Objet_Relationnel/geographie/HYOT_Geographie_Objet.sql",
 		"/home/james/Bureau/gitproxy.sh",
 		"/home/james/Bureau/unsetgitproxy.sh",
 		"/home/james/SEO/www/apple-touch-icon-144x144.png",
@@ -233,7 +215,6 @@
 		"/home/james/WebstormProjects/RPG/main.js",
 		"/home/james/GitHub/tp2tintin/Lance_les_scripts_2eme_partie.sql",
 		"/home/james/GitHub/tp2tintin/TT2_views.sql",
-		"/home/james/GitHub/tp2tintin/insert_albums_noms_etrangers.sql",
 		"/home/james/GitHub/tp2tintin/insert_personnages_noms_etrangers.sql",
 		"/home/james/GitHub/tp2tintin/yessine/create_procedure_Set_Nom_Etranger_Personnage.sql",
 		"/home/james/GitHub/tp2tintin/yessine/create_procedure_Set_Titre_Etranger.sql",
@@ -325,13 +306,7 @@
 		"/home/james/node-v5.0.0-linux-arm64/lib/node_modules/npm/configure",
 		"/home/james/Téléchargements/libexecinfo-1.1/Makefile",
 		"/home/james/Téléchargements/libexecinfo-1.1/README",
-		"/home/james/NetBeansProjects/TPJBDC/src/tpjbdc/TPJBDC.java",
-		"/home/james/NetBeansProjects/TPJBDC/src/tpjbdc/Service.java",
-		"/usr/bin/netbeans",
-		"/home/james/distributions-master/deb/README.md",
-		"/usr/bin/nodejs",
-		"/usr/bin/node",
-		"/home/james/node-v5.0.0-linux-arm64/bin/npm"
+		"/home/james/NetBeansProjects/TPJBDC/src/tpjbdc/TPJBDC.java"
 	],
 	"find":
 	{
@@ -400,7 +375,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -408,15 +383,15 @@
 					"file": "TP_HYOT.sql",
 					"settings":
 					{
-						"buffer_size": 2602,
+						"buffer_size": 3345,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2602,
-								2602
+								3345,
+								3345
 							]
 						],
 						"settings":
@@ -424,111 +399,7 @@
 							"syntax": "Packages/SQL/SQL.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 969.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/home/james/EBM/PLSQL/Objet_Relationnel/geographie/HYOT_Geographie_Objet.sql",
-					"settings":
-					{
-						"buffer_size": 2933,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2867,
-								2867
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SQL/SQL.tmLanguage"
-						},
-						"translation.x": 430.0,
-						"translation.y": 1020.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/home/james/GitHub/tp2tintin/crebas_noms_etrangers.sql",
-					"settings":
-					{
-						"buffer_size": 1798,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SQL/SQL.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1071.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/home/james/GitHub/tp2tintin/insert_albums_noms_etrangers.sql",
-					"settings":
-					{
-						"buffer_size": 2430,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SQL/SQL.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "README.md",
-					"settings":
-					{
-						"buffer_size": 84,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								84,
-								84
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1275.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
