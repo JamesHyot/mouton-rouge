@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"Num",
+				"numSerie"
+			],
+			[
+				"acc",
+				"accessoire_type"
+			],
+			[
+				"ac",
+				"accessoire_ntab_type"
+			],
+			[
 				"po",
 				"post-heading"
 			],
@@ -107,7 +119,39 @@
 			"file": "TP_HYOT.sql",
 			"settings":
 			{
-				"buffer_size": 494,
+				"buffer_size": 2602,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/james/EBM/PLSQL/Objet_Relationnel/geographie/HYOT_Geographie_Objet.sql",
+			"settings":
+			{
+				"buffer_size": 2933,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/james/GitHub/tp2tintin/crebas_noms_etrangers.sql",
+			"settings":
+			{
+				"buffer_size": 1798,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/james/GitHub/tp2tintin/insert_albums_noms_etrangers.sql",
+			"settings":
+			{
+				"buffer_size": 2430,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 84,
 				"line_ending": "Unix"
 			}
 		}
@@ -305,6 +349,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			";",
+			"Obj_Zone",
 			"intro-header",
 			"intro-header	",
 			"intro-header",
@@ -335,6 +381,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"moto",
 			"console.log",
 			"document.write",
 			"TT1_personnage",
@@ -353,7 +400,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -361,20 +408,124 @@
 					"file": "TP_HYOT.sql",
 					"settings":
 					{
-						"buffer_size": 494,
+						"buffer_size": 2602,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								494,
-								494
+								2602,
+								2602
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/SQL/SQL.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 969.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/james/EBM/PLSQL/Objet_Relationnel/geographie/HYOT_Geographie_Objet.sql",
+					"settings":
+					{
+						"buffer_size": 2933,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2867,
+								2867
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SQL/SQL.tmLanguage"
+						},
+						"translation.x": 430.0,
+						"translation.y": 1020.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/james/GitHub/tp2tintin/crebas_noms_etrangers.sql",
+					"settings":
+					{
+						"buffer_size": 1798,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SQL/SQL.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1071.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/home/james/GitHub/tp2tintin/insert_albums_noms_etrangers.sql",
+					"settings":
+					{
+						"buffer_size": 2430,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SQL/SQL.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "README.md",
+					"settings":
+					{
+						"buffer_size": 84,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								84,
+								84
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -441,6 +592,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 301.0,
+	"side_bar_width": 193.0,
 	"status_bar_visible": true
 }
