@@ -103,6 +103,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "TP_HYOT.sql",
+			"settings":
+			{
+				"buffer_size": 494,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -152,6 +160,7 @@
 	},
 	"file_history":
 	[
+		"/home/james/GitHub/tp2tintin/crebas_noms_etrangers.sql",
 		"/home/james/Bureau/gitproxy.sh",
 		"/home/james/Bureau/unsetgitproxy.sh",
 		"/home/james/SEO/www/apple-touch-icon-144x144.png",
@@ -278,8 +287,7 @@
 		"/home/james/distributions-master/deb/README.md",
 		"/usr/bin/nodejs",
 		"/usr/bin/node",
-		"/home/james/node-v5.0.0-linux-arm64/bin/npm",
-		"/home/james/EBM/Java/Service/src/service/Service.java"
+		"/home/james/node-v5.0.0-linux-arm64/bin/npm"
 	],
 	"find":
 	{
@@ -345,8 +353,35 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "TP_HYOT.sql",
+					"settings":
+					{
+						"buffer_size": 494,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								494,
+								494
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SQL/SQL.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
