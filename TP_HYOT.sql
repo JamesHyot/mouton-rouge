@@ -64,10 +64,10 @@ CREATE TABLE moto OF moto_type
 /
 
 
-CREATE OR REPLACE PROCEDURE set_accessoire (p_immat VARCHAR2, p_nom VARCHAR2, p_marque VARCHAR2 , p_prix FLOAT)
+CREATE OR REPLACE PROCEDURE set_accessoire (p_nSerie VARCHAR2, p_nom VARCHAR2, p_marque VARCHAR2 , p_prix FLOAT)
  IS
 BEGIN
-INSERT INTO TABLE (SELECT m.accessoire FROM moto m WHERE m.immatriculation = p_immat)
+INSERT INTO TABLE (SELECT m.accessoire FROM moto m WHERE m.numSerie = p_nSerie)
   VALUES (p_nom,p_marque,p_prix);
   COMMIT;  
 END ;
@@ -85,14 +85,14 @@ INSERT INTO moto VALUES('689 PHP 59',1010,'VT Shadow 125','HONDA',124,7000,'cust
 
 
 Begin
-set_accessoire('777 ADA 95','amortisseur de direction','EBR', NULL);
-set_accessoire('145 UML 59', 'valises', 'HARLEY DAVIDSON', NULL);
-set_accessoire('145 UML 59', 'topcase', 'HARLEY DAVIDSON', NULL);
-set_accessoire('145 UML 59', 'poignées chromées', NULL, 900);
-set_accessoire('145 UML 59', 'repose-pieds passager à LED', NULL, 856.55);
-set_accessoire('123 JDK 14', 'bulle', 'MRA Racing', 99);
-set_accessoire('123 JDK 14', 'protège réservoir', 'DUCATI Corse', 26.10);
-set_accessoire('123 JDK 14', 'support de plaque', 'EVOTECH DUCATI PANIGALE', 255);
+set_accessoire('1007','amortisseur de direction','EBR', NULL);
+set_accessoire('1009', 'valises', 'HARLEY DAVIDSON', NULL);
+set_accessoire('1009', 'topcase', 'HARLEY DAVIDSON', NULL);
+set_accessoire('1009', 'poignées chromées', NULL, 900);
+set_accessoire('1009', 'repose-pieds passager à LED', NULL, 856.55);
+set_accessoire('1008', 'bulle', 'MRA Racing', 99);
+set_accessoire('1008', 'protège réservoir', 'DUCATI Corse', 26.10);
+set_accessoire('1008', 'support de plaque', 'EVOTECH DUCATI PANIGALE', 255);
 commit;
 end;
 /
