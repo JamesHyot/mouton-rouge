@@ -86,8 +86,17 @@ INSERT INTO moto VALUES('689 PHP 59',1010,'VT Shadow 125','HONDA',124,7000,'cust
 
 Begin
 set_accessoire('777 ADA 95','amortisseur de direction','EBR', NULL);
-
-
+set_accessoire('145 UML 59', 'valises', 'HARLEY DAVIDSON', NULL);
+set_accessoire('145 UML 59', 'topcase', 'HARLEY DAVIDSON', NULL);
+set_accessoire('145 UML 59', 'poignées chromées', NULL, 900);
+set_accessoire('145 UML 59', 'repose-pieds passager à LED', NULL, 856.55);
+set_accessoire('123 JDK 14', 'bulle', 'MRA Racing', 99);
+set_accessoire('123 JDK 14', 'protège réservoir', 'DUCATI Corse', 26.10);
+set_accessoire('123 JDK 14', 'support de plaque', 'EVOTECH DUCATI PANIGALE', 255);
 commit;
 end;
 /
+
+
+SELECT m.*, m.get_transmission() as TRANSMISSION
+FROM moto m;
