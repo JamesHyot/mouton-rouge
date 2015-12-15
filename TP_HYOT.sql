@@ -41,11 +41,11 @@ CREATE OR REPLACE TYPE BODY moto_type AS
 MEMBER FUNCTION get_transmission RETURN VARCHAR2 IS
 	resultat VARCHAR2(45);
 BEGIN
-	IF self.type = 'SPORTIF' THEN
+	IF UPPER(self.type) = 'SPORTIF' THEN
 		resultat := 'transmission finale par chaîne';
-	ELSIF self.type = 'CUSTOM' and self.cylindree <= 250 THEN
+	ELSIF UPPER(self.type) = 'CUSTOM' and self.cylindree <= 250 THEN
 		resultat := 'transmission finale par chaîne';
-	ELSIF self.type = 'CUSTOM' and self.cylindree > 250 THEN
+	ELSIF UPPER(self.type) = 'CUSTOM' and self.cylindree > 250 THEN
 		resultat := 'transmission finale par courroie crantée';
 	ELSE
 		resultat := 'unknown';
