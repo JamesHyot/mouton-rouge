@@ -26,8 +26,27 @@ cylindree INTEGER,
 prixCat FLOAT,
 type VARCHAR2(20),
 pourcentageCr FLOAT,
-accessoire accessoire_ntab_type
+accessoire accessoire_ntab_type,
+MEMBER FUNCTION get_transmission RETURN VARCHAR2
 );
+/
+
+CREATE OR REPLACE TYPE BODY moto_type AS
+MEMBER FUNCTION get_transmission RETURN VARCHAR2 IS
+	resultat VARCHAR2(45);
+BEGIN
+	IF self.type = 'SPORTIF' THEN
+		resultat := 'transmission finale par chaîne';
+	ELSIF self.type = 'CUSTOM' and self.cylindree <= 250 THEN
+		resultat := 'transmission finale par chaîne';
+	ELSIF self.type = 'CUSTOM' and self.cylindree > 250 THEN
+		resultat := 'transmission finale par courroie crantée';
+	ELSE
+		resultat := 'unknown';
+	END IF;
+return resultat;
+END;
+END;
 /
 
 CREATE TABLE moto OF moto_type
